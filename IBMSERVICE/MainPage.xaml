@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:translator="clr-namespace:SlotView.Maui;assembly=SlotView.Maui"
+             xmlns:android="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.AndroidSpecific;assembly=Microsoft.Maui.Controls"
+             x:Class="IBMSERVICE.MainPage">
+    <ContentPage.Background>
+        <LinearGradientPaint StartColor="Orange" EndColor="LightYellow" StartPoint="0,20" EndPoint="20,20"/>
+    </ContentPage.Background>
+    <Border Stroke="LightCyan"
+                 StrokeThickness="5"
+                 Margin="2"
+                 VerticalOptions="FillAndExpand"
+                 HorizontalOptions="FillAndExpand">
+        <Border.StrokeShape>
+            <RoundRectangle CornerRadius="90,50,50,90"/>
+        </Border.StrokeShape>
+        <StackLayout Spacing="3" Margin="2" BackgroundColor="White" Orientation="Vertical" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <StackLayout.Background>
+                <LinearGradientPaint StartColor="FloralWhite" EndColor="FloralWhite" EndPoint="0,0" StartPoint="1,1">
+                </LinearGradientPaint>
+            </StackLayout.Background>
+            <Border Stroke="LightCyan"
+                 StrokeThickness="1"
+                 Margin="1"
+                 HeightRequest="450"
+                 WidthRequest="450"
+                 x:Name="APLIKASIUTAMA"
+                 VerticalOptions="Start"
+                 HorizontalOptions="FillAndExpand">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="20,5,5,20" />
+                </Border.StrokeShape>
+                <Border Stroke="LightCyan"
+                 StrokeThickness="5"
+                 VerticalOptions="Start"
+                 HorizontalOptions="FillAndExpand">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="10,2,2,10" />
+                    </Border.StrokeShape>
+                    <Border Stroke="LightCyan"
+                 StrokeThickness="5"
+                 VerticalOptions="FillAndExpand"
+                 HorizontalOptions="FillAndExpand">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="20,5,5,20" />
+                        </Border.StrokeShape>
+                        <StackLayout Spacing="1" Margin="1" BackgroundColor="White" Orientation="Vertical" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                            <Editor x:Name="INPUTMESIN" Placeholder="Enter Your Need" Text="enter" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" WidthRequest="300" Margin="0" AutoSize="TextChanges" PlaceholderColor="WhiteSmoke" TextColor="Black" BackgroundColor="White" MaximumHeightRequest="300" VerticalTextAlignment="Center" CharacterSpacing="2">
+                            </Editor>
+                        </StackLayout>
+                    </Border>
+                </Border>
+            </Border>
+            <Border Stroke="LightCyan"
+                 StrokeThickness="1"
+                 Margin="1"
+                 HeightRequest="450"
+                 WidthRequest="450"
+                 x:Name="APLIKASIKEYBOARDDISABILITAS"
+                 VerticalOptions="Center"
+                 HorizontalOptions="FillAndExpand">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="20,5,5,20" />
+                </Border.StrokeShape>
+                <Border Stroke="LightCyan"
+                 StrokeThickness="5"
+                 VerticalOptions="Center"
+                 HorizontalOptions="FillAndExpand">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="10,2,2,10" />
+                    </Border.StrokeShape>
+                    <Border Stroke="LightCyan"
+                 StrokeThickness="5"
+                 VerticalOptions="FillAndExpand"
+                 HorizontalOptions="FillAndExpand">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="20,5,5,20" />
+                        </Border.StrokeShape>
+                        <ScrollView VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Orientation="Vertical" VerticalScrollBarVisibility="Default" FlowDirection="MatchParent" Visual="Default">
+                            <VerticalStackLayout Spacing="1" Margin="1" x:Name="KEYBOARDDISABILITAS">
+                                <VerticalStackLayout.Background>
+                                    <LinearGradientPaint StartColor="FloralWhite" EndColor="FloralWhite" EndPoint="0,0" StartPoint="1,1">
+                                    </LinearGradientPaint>
+                                </VerticalStackLayout.Background>
+                            </VerticalStackLayout>
+                        </ScrollView>
+                    </Border>
+                </Border>
+            </Border>
+            <Border Stroke="LightCyan"
+                 StrokeThickness="1"
+                 Margin="1"
+                 HeightRequest="450"
+                 WidthRequest="450"
+                 x:Name="KEYBOARD"
+                 VerticalOptions="End"
+                 HorizontalOptions="FillAndExpand">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="20,5,5,20" />
+                </Border.StrokeShape>
+                <Border Stroke="LightCyan"
+                 StrokeThickness="5"
+                 VerticalOptions="End"
+                 HorizontalOptions="FillAndExpand">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="10,2,2,10" />
+                    </Border.StrokeShape>
+                    <Border Stroke="LightCyan"
+                 StrokeThickness="5"
+                 VerticalOptions="FillAndExpand"
+                 HorizontalOptions="FillAndExpand">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="20,5,5,20" />
+                        </Border.StrokeShape>
+                        <ScrollView VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Orientation="Vertical" VerticalScrollBarVisibility="Default" FlowDirection="MatchParent" Visual="Default">
+                            <StackLayout Spacing="1" Margin="1" Orientation="Vertical" x:Name="TRANSKRIPNOTE">
+                                <StackLayout.Background>
+                                    <LinearGradientPaint StartColor="FloralWhite" EndColor="FloralWhite" EndPoint="0,0" StartPoint="1,1">
+                                    </LinearGradientPaint>
+                                </StackLayout.Background>
+                                <Border Stroke="LightCyan"
+                                        StrokeThickness="5"
+                                        VerticalOptions="FillAndExpand"
+                                        HorizontalOptions="FillAndExpand">
+                                    <Border.StrokeShape>
+                                        <RoundRectangle CornerRadius="20,5,5,20" />
+                                    </Border.StrokeShape>
+                                    <ScrollView VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Orientation="Vertical" VerticalScrollBarVisibility="Default" FlowDirection="MatchParent" Visual="Default">
+                                        <StackLayout Spacing="1" Margin="1" Orientation="Vertical" x:Name="TRANSKRIPNOTE">
+                                            <StackLayout.Background>
+                                                <LinearGradientPaint StartColor="FloralWhite" EndColor="FloralWhite" EndPoint="0,0" StartPoint="1,1">
+                                                </LinearGradientPaint>
+                                            </StackLayout.Background>
+                                            <ImageButton x:Name="a+" Source="a.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton x:Name="b+" Source="b.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton x:Name="c+" Source="c.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton x:Name="d+" Source="d.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="e.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="f.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="g.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="h.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="i.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="j.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="k.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="l.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="m.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="n.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="o.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="p.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="q.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="r.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="s.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="t.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="u.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="v.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="w.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="x.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="y.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="z.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                        </StackLayout>
+                                    </ScrollView>
+                                </Border>
+                                <Border Stroke="LightCyan"
+                                        StrokeThickness="5"
+                                        VerticalOptions="FillAndExpand"
+                                        HorizontalOptions="FillAndExpand">
+                                    <Border.StrokeShape>
+                                        <RoundRectangle CornerRadius="20,5,5,20" />
+                                    </Border.StrokeShape>
+                                    <ScrollView VerticalOptions="FillAndExpand" x:Name="SELEKSIONE" HorizontalOptions="FillAndExpand" Orientation="Vertical" VerticalScrollBarVisibility="Default" FlowDirection="MatchParent" Visual="Default">
+                                        <StackLayout Spacing="1" Margin="1" Orientation="Vertical" x:Name="TRANSKRIPNOTE">
+                                            <StackLayout.Background>
+                                                <LinearGradientPaint StartColor="FloralWhite" EndColor="FloralWhite" EndPoint="0,0" StartPoint="1,1">
+                                                </LinearGradientPaint>
+                                            </StackLayout.Background>
+                                            <ImageButton Source="a.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="b.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="c.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="d.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="e.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="f.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="g.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="h.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="i.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="j.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="k.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="l.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="m.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="n.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="o.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="p.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="q.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="r.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="s.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="t.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="u.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="v.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="w.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="x.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="y.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="z.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                        </StackLayout>
+                                    </ScrollView>
+                                </Border>
+                                <Border Stroke="LightCyan"
+                                      StrokeThickness="5"
+                                      VerticalOptions="FillAndExpand"
+                                      HorizontalOptions="FillAndExpand">
+                                    <Border.StrokeShape>
+                                        <RoundRectangle CornerRadius="20,5,5,20" />
+                                    </Border.StrokeShape>
+                                    <ScrollView VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Orientation="Vertical" VerticalScrollBarVisibility="Default" FlowDirection="MatchParent" Visual="Default">
+                                        <StackLayout Spacing="1" Margin="1" Orientation="Vertical" x:Name="TRANSKRIPNOTE">
+                                            <StackLayout.Background>
+                                                <LinearGradientPaint StartColor="FloralWhite" EndColor="FloralWhite" EndPoint="0,0" StartPoint="1,1">
+                                                </LinearGradientPaint>
+                                            </StackLayout.Background>
+                                            <ImageButton Source="a.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="b.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="c.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="d.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="e.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="f.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="g.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="h.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="i.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="j.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="k.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="l.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="m.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="n.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="o.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="p.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="q.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="r.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="s.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="t.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="u.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="v.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="w.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="x.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="y.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                            <ImageButton Source="z.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="1"/>
+                                        </StackLayout>
+                                    </ScrollView>
+                                </Border>
+                            </StackLayout>
+                        </ScrollView>
+                    </Border>
+                </Border>
+            </Border>
+        </StackLayout>
+    </Border>
+</ContentPage>
